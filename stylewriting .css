@@ -47,7 +47,7 @@
 
 .nav-links{
   display:flex;
-  gap:80px;
+  gap:35px;
 }
 
 
@@ -95,7 +95,7 @@
 
   position:relative;
 
-  padding:0 18px;
+  padding:0 6px;
 
   letter-spacing:2px;
 
