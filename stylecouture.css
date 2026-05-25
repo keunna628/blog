@@ -1,0 +1,472 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body{
+  background:#000;
+  color:white;
+  font-family:'Special Elite', cursive;
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+  background:#000;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 50px;
+}
+
+
+.logo img{
+  width:250px;
+  object-fit:contain;
+}
+
+
+nav{
+  display:flex;
+  gap:45px;
+}
+
+
+nav a{
+  text-decoration:none;
+  color:white;
+
+  font-family:'Allison Script', cursive;
+  font-size:30px;
+
+  transition:.3s;
+
+  position:relative;
+}
+
+
+nav a:hover{
+  color:#ff85b7;
+}
+
+
+nav a.active{
+  color:#ff85b7;
+}
+
+
+nav a.active::after{
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-8px;
+
+  width:100%;
+  height:2px;
+
+  background:#ff85b7;
+}
+
+
+
+
+
+/* BANNER */
+
+.banner{
+  width:100%;
+  height:500px;
+
+  overflow:hidden;
+}
+
+
+.banner img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+}
+
+
+
+
+
+/* MAIN LAYOUT */
+
+.main-layout{
+  display:grid;
+  grid-template-columns:70% 30%;
+}
+
+
+
+
+
+/* LEFT SECTION */
+
+.left-section{
+  background:#f6f1f1;
+
+  color:black;
+
+  padding:60px 80px;
+}
+
+
+
+
+
+/* LABELS */
+
+.featured-label,
+.entries-label{
+  color:#d48ca3;
+
+  margin-bottom:35px;
+
+  position:relative;
+
+  font-size:18px;
+}
+
+
+.featured-label::after,
+.entries-label::after{
+  content:'';
+
+  position:absolute;
+
+  left:0;
+  bottom:-12px;
+
+  width:120px;
+  height:1px;
+
+  background:#d48ca3;
+}
+
+
+
+
+
+/* FEATURED POST */
+
+.featured-post{
+  display:flex;
+  align-items:center;
+  gap:60px;
+
+  margin-bottom:70px;
+}
+
+
+.featured-text{
+  flex:1;
+}
+
+
+.featured-text h1{
+  font-size:58px;
+
+  line-height:1.3;
+
+  margin-bottom:30px;
+}
+
+
+.featured-text p{
+  line-height:2;
+
+  font-size:18px;
+
+  margin-bottom:35px;
+}
+
+
+.read-btn{
+  display:inline-block;
+
+  background:black;
+  color:white;
+
+  text-decoration:none;
+
+  padding:18px 32px;
+
+  transition:.3s;
+}
+
+
+.read-btn:hover{
+  background:#ff85b7;
+}
+
+
+
+
+
+/* CAMERA IMAGE */
+
+.camera-image{
+  flex:1;
+}
+
+
+.camera-image img{
+  width:100%;
+
+  border:10px solid #f3ecec;
+}
+
+
+
+
+
+/* ENTRIES */
+
+.entry{
+  border-top:1px solid #dfc6cd;
+
+  padding:25px 0;
+
+  display:flex;
+  justify-content:space-between;
+
+  gap:30px;
+}
+
+
+.entry h3{
+  font-size:34px;
+
+  margin-bottom:10px;
+}
+
+
+.entry p{
+  font-size:16px;
+}
+
+
+.entry span{
+  color:#d48ca3;
+
+  white-space:nowrap;
+}
+
+
+
+
+
+/* SIDEBAR */
+
+.sidebar{
+  background:black;
+
+  padding:40px 30px;
+}
+
+
+.sidebar-image{
+  width:100%;
+
+  display:block;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+  background:black;
+
+  padding:60px 70px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+
+  gap:50px;
+}
+
+
+.footer-left,
+.footer-right{
+  font-family:'Allison Script', cursive;
+
+  font-size:48px;
+
+  line-height:1.5;
+}
+
+
+.footer-center{
+  text-align:center;
+}
+
+
+
+
+
+/* FOOTER LINKS */
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+
+  gap:10px;
+
+  margin-bottom:40px;
+}
+
+
+.footer-links a{
+  text-decoration:none;
+
+  color:white;
+}
+
+
+.footer-links a:hover{
+  color:#ff85b7;
+}
+
+
+.footer-links .active{
+  color:#ff85b7;
+}
+
+
+
+
+
+/* NEWSLETTER */
+
+.newsletter h4{
+  font-family:'Allison Script', cursive;
+
+  font-size:45px;
+
+  color:#ff85b7;
+
+  margin-bottom:15px;
+
+  font-weight:normal;
+}
+
+
+.newsletter p{
+  line-height:1.8;
+
+  margin-bottom:25px;
+}
+
+
+.email-box{
+  display:flex;
+}
+
+
+.email-box input{
+  flex:1;
+
+  background:#111;
+
+  border:none;
+
+  padding:15px;
+
+  color:white;
+
+  outline:none;
+
+  font-family:'Special Elite', cursive;
+}
+
+
+.email-box button{
+  width:70px;
+
+  border:none;
+
+  background:#ff85b7;
+
+  color:white;
+
+  cursor:pointer;
+
+  font-size:24px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .main-layout{
+    grid-template-columns:1fr;
+  }
+
+
+  .featured-post{
+    flex-direction:column;
+  }
+
+
+  .footer{
+    grid-template-columns:1fr;
+
+    text-align:center;
+  }
+
+
+  .navbar{
+    flex-direction:column;
+
+    gap:20px;
+  }
+
+
+  nav{
+    flex-wrap:wrap;
+
+    justify-content:center;
+  }
+
+}
+
+
+
+
+@media(max-width:700px){
+
+  .left-section{
+    padding:40px 30px;
+  }
+
+
+  .featured-text h1{
+    font-size:40px;
+  }
+
+
+  .entry{
+    flex-direction:column;
+  }
+
+}
