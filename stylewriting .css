@@ -19,12 +19,6 @@
   padding:0;
   box-sizing:border-box;
 }
-
-body{
-  background:#f5f1ef;
-  overflow-x:hidden;
-}
-
 /* =========================
    NAVBAR
 ========================= */
@@ -38,6 +32,8 @@ body{
   padding:18px 55px;
 }
 
+
+
 /* LOGO */
 
 .logo img{
@@ -45,24 +41,31 @@ body{
   display:block;
 }
 
+
+
 /* NAV LINKS */
 
 .nav-links{
   display:flex;
-  gap:45px;
+  gap:80px;
 }
+
+
+
+/* LINKS */
 
 .nav-links a{
   text-decoration:none;
   color:white;
   font-family:'Allison', cursive;
-  font-size:24px;
+  font-size:34px;
   transition:0.3s;
   position:relative;
-   margin-right: 18px;
-letter-spacing: 1px;
+
+  letter-spacing:1px;
 }
-}
+
+
 
 /* HOVER */
 
@@ -70,11 +73,15 @@ letter-spacing: 1px;
   color:#ff5ca8;
 }
 
+
+
 /* ACTIVE PAGE */
 
 .nav-links a.active{
   color:#ff5ca8;
 }
+
+
 
 .nav-links a.active::after{
   content:'';
@@ -84,6 +91,11 @@ letter-spacing: 1px;
   background:#ff5ca8;
   left:0;
   bottom:-5px;
+}
+
+body{
+  background:#f5f1ef;
+  overflow-x:hidden;
 }
 
 /* =========================
