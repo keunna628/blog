@@ -122,51 +122,45 @@
 
 
 
-        <!-- SUBJECT -->
-        <div class="input-group">
-
-          <label>
-            what are you contacting me about?
-          </label>
-
-          <input
-            type="text"
-            placeholder="fashion, collaborations, advice, etc."
-            required
-          >
-
-        </div>
-
-
-
-
-
-        <!-- MESSAGE -->
-        <div class="input-group">
-
-          <label>
-            your message
-          </label>
-
-          <textarea
-            placeholder="write your message here..."
-            required
-          ></textarea>
-
-        </div>
-
-
-
-
-
-        <!-- BUTTON -->
         <form action="https://formspree.io/f/mojbnbnw" method="POST">
-        <button type="submit" class="submit-btn">
-          send message →
-        </button>
 
-      </form>
+  <!-- SUBJECT -->
+  <div class="input-group">
 
+    <label>
+      what are you contacting me about?
+    </label>
+
+    <input
+      type="text"
+      name="subject"
+      placeholder="fashion, collaborations, advice, etc."
+      required
+    >
+
+  </div>
+
+  <!-- MESSAGE -->
+  <div class="input-group">
+
+    <label>
+      your message
+    </label>
+
+    <textarea
+      name="message"
+      placeholder="write your message here..."
+      required
+    ></textarea>
+
+  </div>
+
+  <!-- BUTTON -->
+  <button type="submit" class="submit-btn">
+    send message →
+  </button>
+
+</form>
     </div>
 
   </section>
