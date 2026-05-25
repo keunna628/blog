@@ -270,4 +270,75 @@ footer {
 .currently p,
 .journal-post p {
   font-family: 'Special Elite' !important;
+
+  @media (max-width: 768px) {
+
+header {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  width: 170px;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-left: 0;
+}
+
+.links {
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  font-size: 28px;
+}
+
+.hero {
+  height: 220px;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.main-content {
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.Currently {
+  width: 100%;
+}
+
+.journal-post {
+  flex-direction: column;
+}
+
+.journal-post img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  width: 100%;
+}
+
+footer {
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.footer-right p {
+  font-size: 35px;
+}
+
+.footer-email h2 {
+  font-size: 42px;
+}
+
+}
 }
