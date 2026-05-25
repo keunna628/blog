@@ -1,0 +1,373 @@
+/* =========================
+   IMPORT FONTS
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* Allison Font */
+@font-face {
+  font-family: 'Allison';
+  src: url('https://fonts.gstatic.com/s/allison/v2/X7nT4b88AP2nKBPSK-FMBlE.woff2');
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#f5f1ef;
+  overflow-x:hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  width:100%;
+  background:#000;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 55px;
+}
+
+/* LOGO */
+
+.logo img{
+  width:290px;
+  display:block;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+  display:flex;
+  gap:45px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-family:'Allison', cursive;
+  font-size:24px;
+  transition:0.3s;
+  position:relative;
+}
+
+/* HOVER */
+
+.nav-links a:hover{
+  color:#ff5ca8;
+}
+
+/* ACTIVE PAGE */
+
+.nav-links a.active{
+  color:#ff5ca8;
+}
+
+.nav-links a.active::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:2px;
+  background:#ff5ca8;
+  left:0;
+  bottom:-5px;
+}
+
+/* =========================
+   BANNER IMAGE
+========================= */
+
+.banner img{
+  width:100%;
+  display:block;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.main-layout{
+  display:grid;
+  grid-template-columns:240px 1fr 280px;
+}
+
+/* =========================
+   LEFT SIDEBAR
+========================= */
+
+.left-sidebar{
+  background:#000;
+  color:white;
+  padding:40px 25px;
+}
+
+.left-sidebar h2{
+  font-family:'Allison', cursive;
+  color:#ff6db3;
+  font-size:40px;
+  margin-bottom:35px;
+}
+
+.sidebar-item{
+  font-family:'Special Elite', monospace;
+  font-size:16px;
+  line-height:2;
+  padding:30px 0;
+  border-bottom:1px solid rgba(255,255,255,0.12);
+}
+
+/* =========================
+   CENTER WHITE SECTION
+========================= */
+
+.center-content{
+  background:white;
+  text-align:center;
+  padding:40px 70px 70px;
+}
+
+.center-content h1{
+  font-family:'Allison', cursive;
+  color:#f29cc0;
+  font-size:70px;
+  font-weight:normal;
+  margin-bottom:10px;
+}
+
+.line{
+  width:70%;
+  height:1px;
+  background:#f3bfd4;
+  margin:0 auto 35px;
+}
+
+.description{
+  font-family:'Special Elite', monospace;
+  font-size:20px;
+  line-height:2;
+  margin-bottom:35px;
+}
+
+/* FORM */
+
+.story-form{
+  width:100%;
+  max-width:650px;
+  margin:auto;
+}
+
+.story-form textarea,
+.story-form input{
+  width:100%;
+  border:1px solid #f4bfd2;
+  padding:18px;
+  margin-bottom:15px;
+  font-family:'Special Elite', monospace;
+  font-size:17px;
+  outline:none;
+}
+
+.story-form textarea{
+  height:160px;
+  resize:none;
+}
+
+/* FORM FOCUS */
+
+.story-form textarea:focus,
+.story-form input:focus{
+  border:1px solid #ff5ca8;
+}
+
+/* BUTTON */
+
+.story-form button{
+  width:100%;
+  background:#000;
+  color:white;
+  border:none;
+  padding:18px;
+  font-family:'Special Elite', monospace;
+  font-size:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.story-form button:hover{
+  background:#ff5ca8;
+}
+
+/* SAFE NOTE */
+
+.safe-note{
+  margin-top:28px;
+  color:#f29cc0;
+  font-family:'Special Elite', monospace;
+  line-height:2;
+  font-size:15px;
+}
+
+/* =========================
+   RIGHT SIDEBAR
+========================= */
+
+.right-sidebar{
+  background:#ece1d7;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:35px;
+}
+
+.sticky-notes{
+  width:230px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  background:#000;
+  color:white;
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1.5fr 1fr;
+  gap:40px;
+  padding:45px 60px;
+}
+
+/* FOOTER QUOTE */
+
+.quote{
+  font-family:'Allison', cursive;
+  font-size:30px;
+  line-height:1.8;
+}
+
+/* FOOTER LINKS */
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+}
+
+.footer-links a{
+  color:white;
+  text-decoration:none;
+  margin-bottom:10px;
+  font-family:'Special Elite', monospace;
+  transition:0.3s;
+}
+
+/* HOVER */
+
+.footer-links a:hover{
+  color:#ff5ca8;
+}
+
+/* ACTIVE FOOTER LINK */
+
+.footer-active{
+  color:#ff5ca8 !important;
+}
+
+/* NEWSLETTER */
+
+.newsletter h3{
+  font-family:'Allison', cursive;
+  color:#ff7db9;
+  font-size:42px;
+  font-weight:normal;
+  margin-bottom:10px;
+}
+
+.newsletter p{
+  font-family:'Special Elite', monospace;
+  line-height:1.8;
+  margin-bottom:18px;
+}
+
+/* EMAIL BOX */
+
+.newsletter-box{
+  display:flex;
+}
+
+.newsletter-box input{
+  flex:1;
+  padding:15px;
+  background:#000;
+  border:1px solid #555;
+  color:white;
+  font-family:'Special Elite', monospace;
+}
+
+.newsletter-box button{
+  width:65px;
+  background:#ff5ca8;
+  border:none;
+  color:white;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* RIGHT FOOTER */
+
+.footer-right-text{
+  font-family:'Allison', cursive;
+  font-size:30px;
+  line-height:1.8;
+  text-align:center;
+}
+
+/* COPYRIGHT */
+
+.copyright{
+  background:#000;
+  color:white;
+  text-align:center;
+  padding-bottom:25px;
+  font-family:'Special Elite', monospace;
+  font-size:14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+  .main-layout{
+    grid-template-columns:1fr;
+  }
+
+  .footer{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .nav-links{
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .right-sidebar{
+    padding:40px 0;
+  }
+}
