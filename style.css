@@ -270,6 +270,7 @@ footer {
 .currently p,
 .journal-post p {
   font-family: 'Special Elite' !important;
+}
 
   @media (max-width: 768px) {
 
