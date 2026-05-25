@@ -1,144 +1,120 @@
-/* ===== ENTRIES PAGE ===== */
 
-body {
-  background: #000000;
-  margin: 0;
-  padding: 0;
-  font-family: Georgia, serif;
-  color: white;
+/* =========================
+   ENTRIES PAGE
+========================= */
+
+body{
+  background:#000;
+  margin:0;
+  padding:0;
+  font-family:Georgia, serif;
+  color:white;
 }
 
 
 
-/* ===== PAGE TITLE ===== */
+/* TITLE */
 
-h1 {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  color: #ff8fc7;
-  letter-spacing: 2px;
-  font-weight: normal;
+h1{
+  text-align:center;
+  color:#ff8fc7;
+  font-size:68px;
+  font-weight:normal;
+  margin-top:70px;
+  margin-bottom:90px;
+  letter-spacing:2px;
 }
 
 
 
-/* ===== POSTS CONTAINER ===== */
+/* ENTRY CARD */
 
-.post {
-  width: 85%;
-  max-width: 760px;
+.journal-entry{
+  width:82%;
+  max-width:850px;
 
-  margin: 90px auto; /* BIG SPACE BETWEEN ENTRIES */
+  margin:0 auto 90px auto;
 
-  background: #111111;
+  background:#111;
 
-  border: 1px solid #ff8fc7;
+  border:1px solid #ff8fc7;
 
-  border-radius: 28px;
+  border-radius:30px;
 
-  padding: 45px;
+  padding:50px;
 
-  box-shadow: 0 0 25px rgba(255, 143, 199, 0.15);
+  box-shadow:0 0 25px rgba(255,143,199,0.12);
 }
 
 
 
-/* ===== POST TITLES ===== */
+/* ENTRY TITLE */
 
-.post h2 {
-  font-size: 36px;
-  color: #ff8fc7;
-  margin-bottom: 25px;
-  font-weight: normal;
-  letter-spacing: 1px;
+.journal-entry h2{
+  color:#ff8fc7;
+  font-size:42px;
+  font-weight:normal;
+  margin-bottom:12px;
 }
 
 
 
-/* ===== POST TEXT ===== */
+/* DATE */
 
-.post p {
-  font-size: 20px;
-  line-height: 2;
-  color: #ffffff;
+.date{
+  color:#ffd4e8;
+  font-size:18px;
+  margin-bottom:25px;
+  letter-spacing:1px;
 }
 
 
 
-/* ===== LINKS ===== */
+/* PINK DIVIDER */
 
-a {
-  color: #ff8fc7;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.75;
-}
-
-
-
-/* ===== BUTTON STYLE ===== */
-
-.journal-button {
-  display: inline-block;
-
-  background: #ff8fc7;
-
-  color: black;
-
-  padding: 15px 32px;
-
-  border-radius: 16px;
-
-  text-decoration: none;
-
-  border: none;
-
-  font-size: 18px;
-
-  cursor: pointer;
-
-  transition: 0.3s ease;
-}
-
-.journal-button:hover {
-  transform: translateY(-3px);
-  opacity: 0.9;
+.entry-line{
+  width:100%;
+  height:1px;
+  background:#ff8fc7;
+  margin-bottom:30px;
+  opacity:0.5;
 }
 
 
 
-/* ===== MOBILE ===== */
+/* ENTRY TEXT */
 
-@media (max-width: 768px) {
+.journal-entry p{
+  font-size:21px;
+  line-height:2;
+  color:white;
+}
 
-  h1 {
-    font-size: 42px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  h1{
+    font-size:46px;
+    margin-top:50px;
+    margin-bottom:60px;
   }
 
-  .post {
-    width: 88%;
-    padding: 28px;
-    margin: 65px auto;
+  .journal-entry{
+    width:88%;
+    padding:30px;
+    margin-bottom:60px;
   }
 
-  .post h2 {
-    font-size: 28px;
+  .journal-entry h2{
+    font-size:30px;
   }
 
-  .post p {
-    font-size: 18px;
-    line-height: 1.8;
-  }
-
-  .journal-button {
-    width: 100%;
-    text-align: center;
+  .journal-entry p{
+    font-size:18px;
+    line-height:1.8;
   }
 
 }
