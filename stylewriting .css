@@ -83,14 +83,24 @@
 
 
 
-.nav-links a.active::after{
-  content:'';
-  position:absolute;
-  width:100%;
-  height:2px;
-  background:#ff5ca8;
-  left:0;
-  bottom:-5px;
+.nav-links a{
+  text-decoration:none;
+  color:white;
+
+  font-family:'Allison', cursive;
+
+  font-size:42px;
+
+  transition:0.3s;
+
+  position:relative;
+
+  padding:0 18px;
+
+  letter-spacing:2px;
+
+  white-space:nowrap;
+};
 }
 
 body{
