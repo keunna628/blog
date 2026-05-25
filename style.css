@@ -88,9 +88,19 @@ lcenter;
   margin-top: -10px
 }
 
-.currently p {
-  margin-bottom: 35px;
-  font-size: 13px;
+.Currently p{
+
+  font-family:'Special Elite', cursive;
+
+  font-size:18px;
+
+  padding:28px 0;
+
+  margin:0;
+
+  border-bottom:1px solid rgba(255,255,255,0.2);
+
+
 }
 .main-content {
   background: #f4f1f1;
@@ -127,12 +137,9 @@ lcenter;
   font-family: 'Allison', cursive;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.currently p {
   margin-bottom: 35px;
   font-size: 13px;
+  
   
   
 }
