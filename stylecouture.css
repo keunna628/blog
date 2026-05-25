@@ -19,7 +19,7 @@ body{
   background:#000;
 
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
 
   padding:20px 50px;
@@ -34,7 +34,7 @@ body{
 
 nav{
   display:flex;
-  gap:45px;
+  gap:40px;
 }
 
 
@@ -62,7 +62,7 @@ nav a.active{
 
 
 nav a.active::after{
-  content:'';
+  content:'
 
   position:absolute;
 
